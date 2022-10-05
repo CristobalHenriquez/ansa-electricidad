@@ -273,20 +273,17 @@ margin: 3;
     color: rgb(19, 19, 20);
   }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
 
   .header{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
     height: auto;
-    width: 100%;
-    color: #6cd0ff;
-  }
-
-  header  img{
-    border-radius: 20px;
+    }
+  .logo{
+    height: 260px;
+    width: auto;
+    border-bottom-right-radius: 60%;
+    border-bottom-left-radius: 60%;
   }
 
 nav a{
@@ -295,7 +292,7 @@ nav a{
   text-decoration: none;
   padding: 10px 20px;
   line-height:normal;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
@@ -306,28 +303,45 @@ nav a:hover{
   border-radius: 50px;
 }
 
-#banner{
-  background-color: #2e3130;
+#banner {
+  background-color: #242e4956;
   width: 100%;
-  height: 70vh;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.banner__titulo {
+  display: block;
+  width: 30vh;
+  height: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
 
-  .banner__titulo{
-  display: flex;
-  }
+.banner__img {
+  width: 70vh;
+  height: 70%;
+  border-radius: 10%;
+}
 
-  .banner__titulo h1{
+.imgmarcas {
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+}
+.banner__titulo h1 {
   color: white;
   font-family: 'Mouse Memoirs', sans-serif;
   font-size: 5rem;
-  margin: 5%;
-  height: auto;
-  text-align: auto;
-  }
+  text-align: initial;
+}
+
   <style>
   img.btn-whatsapp {
   display: block !important;
@@ -361,187 +375,135 @@ nav a:hover{
   color: white;
   font-family: 'Mouse Memoirs', sans-serif;
   height: auto;
-  margin-top: 10%;
   }
 
-  #us{
-  background-color: #2e3130;
-  height: auto;
+  #us {
+  background-color: #4c504f;
+  height: 100%;
+  width: auto;
+  margin: 0;
   }
-
-  #us p{
-  margin: auto;
-  margin-bottom: 10%;
-  margin-bottom: 10%;
+  
+  #us p {
+  margin-top: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 5%;
   color: white;
   font-family: 'Mouse Memoirs', sans-serif;
   font-size: 4rem;
-  text-align: center;
+  text-align: justify;
   height: auto;
   }
 
-  #services{
+  .services {
   background-color: #2e3130;
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  align-items: center;
+  width: 100px;
   }
-
-
-.btn-btn-primary {
-  display: contents;
-  width: 15px;
-  height: 10px;
-}
-
   
-
-  .carousel{
+  .conatainer {
   display: flex;
-  width: 55%;
-  height: 50%;
-  margin-top: 0;
-  margin-bottom: 20%
+  flex-direction: column;
+  width: 100%;
+  height: auto;
   }
-
-  .section__title h2{
+  
+  .img1 {
+  width: 20%;
+  height: 20%;
+  border-radius: 10%;
+  margin: 5% 3% 5% 3%;
+  }
+  
+  .contact__item {
+  margin: 1em;
+  padding: 1em;
+  float: left;
+  margin-left: 20px;
+  }
+  
+  .btn-btn-primary {
+  display: contents;
+  align-items: center;
+  width: 20px;
+  height: 15px;
+  }
+  
+  .section__title h2 {
   font-size: 6rem;
   color: white;
   font-family: 'Mouse Memoirs', sans-serif;
   height: auto;
-  margin-bottom: 200%;
-  margin-top: 10%;
   justify-content: center;
+  margin-top: 10%;
   }
-
-  #services a{
+  
+  #services a {
   margin-top: 5%;
   margin: auto;
   font-size: 4rem;
   font-family: 'Mouse Memoirs', sans-serif;
   text-align: center;
   border-radius: 10px;
-  height:100px;
-  width: 700px;
-  justify-content:center;
-  }
-  /*contacto*/
-  #contact{
-  background-color: #2e3130;
-  height:auto;
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 20%;
-  margin: 12% 0 ;
-  }
-
-  #contact .section__title{
-  color: white;
+  height: auto;
   width: 100%;
-  margin-top: 10%;
-  text-align: center;
+  justify-content: center;
   }
-
+  
+    /*contacto*/
+  #contact {
+  background-color: #2e3130;
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 3%;
+  }
+  
+  #contact .section__title {
+  color: white;
+  justify-content: center;
+  padding-bottom: 20px;
+  }
+  
   .contact__item {
-  width: 28%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 12% 0;
-  }
-
-  .contact__image{
-  font-size: 8rem;
-  color: white;
   margin: 3%;
   }
-
-  .contact__title{
-  font-size: 3rem;
+  
+  .contact__image {
+  font-size: 6rem;
+  color: white;
+  padding: 5px;
+  }
+  
+  .contact__title {
+  font-size: 3.5rem;
   text-decoration: none;
   color: white;
+  margin: 3;
   }
-
-  .form__map{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
+  
+  .form__map {
+  display: flex;
+  height: 500px;
+  width: 900px;
   }
-  .map{
-  width: 550px;
-  height: 480px;
+  /*FOOTER*/
+  footer span {
+  height: auto;
+  width: auto;
+  font-family: italic;
+  font-size: 2rem;
+  color: rgb(233, 233, 243);
   }
-
-    form{
-    width: 350px;
-    margin: auto;
-    background: rgba(0,0,0,0.4);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    border-radius: 7px;
-  }
-
-  form,h5{
-    color: #fff;
-    font-size: 25px;
-    margin: 0;
-    margin-bottom: 20px;
-  }
-
-  input,textarea{
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 17px;
-    border: none;
-  }
-
-  textarea{
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
-  }
-
-  #boton{
-    background-color: #31384A;
-    color: #fff;
-    padding: 20px;
-  }
-
-  #boton:hover{
-    cursor: pointer;
-  }
-
-  @media (max-width:480px){
-    form{
-      width: 100%;
-    }
-  }
-.mapa{
-  width: 500px;
-  height: 480px;
-}
-
-
-    /*FOOTER*/
-
-footer span{
-    font-size: 1.5rem;
-    color: white;
-    }
-
-
-}
