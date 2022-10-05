@@ -5,71 +5,106 @@ html{
 }
 
 body{
-  background: #fffffa;
   text-align: center;
-  margin: 3%;
-  background-color: #2e3130;
+  background-color: #77797c;
+  margin: 0;
 }
-
 
 *{
   box-sizing: border-box;
 }
 
-
 /*HEADER*/
 .header{
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   height: 12vh;
   width: 100%;
   color: #6cd0ff;
 }
 
-header img{
-  border-radius: 20px;
+.nav{
+display: flex;
+flex-direction: column;
 }
 
- nav a{
-   display: inline-block;
-   color: #fff;
-   text-decoration: none;
-   padding: 10px 20px;
-   line-height:normal;
-   font-size: 25px;
-   font-weight: bold;
-   -webkit-transition: all 500ms ease;
-   -o-transition: all 500ms ease;
-   transition: all 500ms ease;
- }
- nav a:hover{
-   background: #92E1E2;
-   border-radius: 50px;
- }
+header img{
 
- #banner{
- background-color: #2e3130;
- width: 100%;
- height: 75vh;
- display: flex;
- justify-content: center;
- align-items: center;
- align-content: center;
+  height: 150px;
+  width: 100%;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+}
+
+nav a{
+  display: flex;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 5px 10px;
+  line-height:normal;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+nav a:hover{
+  background: #7fc7c9;
+  border-radius: 50px;
+}
+.a{
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+
+/*contenido*/
+#banner{
+background-color: #242e4956;
+width: 100%;
+height: 40vh;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+align-items: center;
+align-content: center;
 }
 
 .banner__titulo{
+display: block;
+width: 30vh;
+height: 40%;
 display: flex;
- }
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
 .banner__titulo h1{
 color: white;
 font-family: 'Mouse Memoirs', sans-serif;
-font-size: 5rem;
-margin: 5%;
+font-size: 2.5rem;
+flex-direction: row;
 height: auto;
-text-align: auto;
+text-align: center;
 }
+
+.imgmarcas{
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+}
+
+.banner__img {
+  width: 30vh;
+  height: 60%;
+  border-radius: 10%;
+}
+
 <style>
 img.btn-whatsapp {
 display: block !important;
@@ -89,56 +124,77 @@ transition-duration: 1s;
 }
 </style>
 main section{
-width: auto;
-height: auto;
+width: 100%;
+height: 70vh;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
 padding: 0 15%;
 }
+
 .section__title{
-font-size: 6rem;
+font-size: 4rem;
 color: white;
 font-family: 'Mouse Memoirs', sans-serif;
 height: auto;
-margin-top: 10%;
+
 }
+
 #us{
-background-color: #2e3130;
-height: auto;
+background-color: #4c504f;
+height: 100%;
+width: auto;
 }
 
 #us p{
-margin: auto;
-margin-bottom: 10%;
-margin-bottom: 10%;
+margin-top: 1%;
+margin-left: 7%;
+margin-right: 7%;
+margin-bottom: 3%;
 color: white;
 font-family: 'Mouse Memoirs', sans-serif;
-font-size: 4rem;
-text-align: center;
+font-size: 2rem;
+text-align: justify;
 height: auto;
 }
 
-
-
-#services{
+.services{
 background-color: #2e3130;
 width: 100%;
-height: 75vh;
+height: auto;
 display: flex;
 flex-direction: column;
-align-content: center;
-align-items: center;
+width: 100px;
+}
+
+.conatainer{
+display: flex;
+flex-direction: column;
+width: 100%;
+height: auto;
+}
+
+.img1{
+width: 40%;
+height: 40%;
+border-radius: 10%;
+margin: 5% 3% 5% 3%;
 
 }
 
-.carousel{
-display: block;
-width: 55%;
-height: 50%;
-margin-top: 0;
-margin-bottom: 20%
+.contact__item{
+  margin: 1em;
+  padding: 1em;
+  float: left;
+  margin-left: 20px;
+}
+
+.btn-btn-primary {
+  display: contents;
+  align-items: center;
+  width: 15px;
+  height: 10px;
 }
 
 .section__title h2{
@@ -146,9 +202,8 @@ font-size: 6rem;
 color: white;
 font-family: 'Mouse Memoirs', sans-serif;
 height: auto;
-margin-bottom: 200%;
-margin-top: 10%;
 justify-content: center;
+margin-top: 10%;
 }
 
 #services a{
@@ -158,93 +213,335 @@ font-size: 4rem;
 font-family: 'Mouse Memoirs', sans-serif;
 text-align: center;
 border-radius: 10px;
-height:100px;
-width: 700px;
+height:auto;
+width: 100%;
 justify-content:center;
 }
 /*contacto*/
 #contact{
 background-color: #2e3130;
-height:auto;
-width: 100%;
-flex-direction: row;
-flex-wrap: wrap-reverse;
-padding-top: 0%;
+width: auto;
+height: 100%;
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+padding: 3%;
 }
 
 #contact .section__title{
 color: white;
-width: 100%;
-margin-top: 20%;
-text-align: center;
+justify-content: center;
+padding-bottom: 20px;
 }
+
 .contact__item {
- width: 28%;
+width: 100%;
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-margin: 12% 0;
+margin: 3%;
 }
 
-  .contact__image{
-    font-size: 8rem;
-    color: white;
-  }
-   .contact__title{
-    font-size: 3rem;
-    text-decoration: none;
-    color: white;
-  }
-
-  form{
-  width: 350px;
-  margin: auto;
-  background: rgba(0,0,0,0.4);
-  padding: 10px 20px;
-  box-sizing: border-box;
-  margin-top: 20px;
-  border-radius: 7px;
-}
-form,h5{
-  color: #fff;
-  font-size: 25px;
-  margin: 0;
-  margin-bottom: 20px;
+.contact__image{
+font-size: 4rem;
+color: white;
+padding: 5px;
 }
 
-input,textarea{
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 7px;
-  box-sizing: border-box;
-  font-size: 17px;
-  border: none;
-}
-textarea{
-  min-height: 100px;
-  max-height: 200px;
-  max-width: 100%;
-}
-#boton{
-  background-color: #31384A;
-  color: #fff;
-  padding: 20px;
-}
-#boton:hover{
-  cursor: pointer;
-}
-.mapa{
-  width: 350px;
-  height: 300px;
+.contact__title{
+font-size: 2.5rem;
+text-decoration: none;
+color: white;
+margin: 3;
 }
 
+.form__map{
+  display: flex;
+  height: 100%;
+  width: 70%;
+  margin-left: 15%;
 
-
+}
 
   /*FOOTER*/
-
   footer span{
-    font-size: 3rem;
-    color: white;
+    height: auto;
+    width: auto;
+    font-size: 2rem;
+    color: rgb(19, 19, 20);
   }
+
+@media (min-width: 1000px) {
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    color: #6cd0ff;
+  }
+
+  header  img{
+    border-radius: 20px;
+  }
+
+nav a{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  line-height:normal;
+  font-size: 25px;
+  font-weight: bold;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+nav a:hover{
+  background: #92E1E2;
+  border-radius: 50px;
+}
+
+#banner{
+  background-color: #2e3130;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+  .banner__titulo{
+  display: flex;
+  }
+
+  .banner__titulo h1{
+  color: white;
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 5rem;
+  margin: 5%;
+  height: auto;
+  text-align: auto;
+  }
+  <style>
+  img.btn-whatsapp {
+  display: block !important;
+  position: fixed;
+  z-index: 9999999;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  border-radius:100px !important;
+  }
+  img.btn-whatsapp:hover{
+  border-radius:100px !important;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+  box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+  transition-duration: 1s;
+  }
+  </style>
+  main section{
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 15%;
+  }
+
+  .section__title{
+  font-size: 6rem;
+  color: white;
+  font-family: 'Mouse Memoirs', sans-serif;
+  height: auto;
+  margin-top: 10%;
+  }
+
+  #us{
+  background-color: #2e3130;
+  height: auto;
+  }
+
+  #us p{
+  margin: auto;
+  margin-bottom: 10%;
+  margin-bottom: 10%;
+  color: white;
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  height: auto;
+  }
+
+  #services{
+  background-color: #2e3130;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  }
+
+
+.btn-btn-primary {
+  display: contents;
+  width: 15px;
+  height: 10px;
+}
+
+  
+
+  .carousel{
+  display: flex;
+  width: 55%;
+  height: 50%;
+  margin-top: 0;
+  margin-bottom: 20%
+  }
+
+  .section__title h2{
+  font-size: 6rem;
+  color: white;
+  font-family: 'Mouse Memoirs', sans-serif;
+  height: auto;
+  margin-bottom: 200%;
+  margin-top: 10%;
+  justify-content: center;
+  }
+
+  #services a{
+  margin-top: 5%;
+  margin: auto;
+  font-size: 4rem;
+  font-family: 'Mouse Memoirs', sans-serif;
+  text-align: center;
+  border-radius: 10px;
+  height:100px;
+  width: 700px;
+  justify-content:center;
+  }
+  /*contacto*/
+  #contact{
+  background-color: #2e3130;
+  height:auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20%;
+  margin: 12% 0 ;
+  }
+
+  #contact .section__title{
+  color: white;
+  width: 100%;
+  margin-top: 10%;
+  text-align: center;
+  }
+
+  .contact__item {
+  width: 28%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 12% 0;
+  }
+
+  .contact__image{
+  font-size: 8rem;
+  color: white;
+  margin: 3%;
+  }
+
+  .contact__title{
+  font-size: 3rem;
+  text-decoration: none;
+  color: white;
+  }
+
+  .form__map{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+  }
+  .map{
+  width: 550px;
+  height: 480px;
+  }
+
+    form{
+    width: 350px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+  }
+
+  form,h5{
+    color: #fff;
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  input,textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+  }
+
+  textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+
+  #boton{
+    background-color: #31384A;
+    color: #fff;
+    padding: 20px;
+  }
+
+  #boton:hover{
+    cursor: pointer;
+  }
+
+  @media (max-width:480px){
+    form{
+      width: 100%;
+    }
+  }
+.mapa{
+  width: 500px;
+  height: 480px;
+}
+
+
+    /*FOOTER*/
+
+footer span{
+    font-size: 1.5rem;
+    color: white;
+    }
+
+
+}
